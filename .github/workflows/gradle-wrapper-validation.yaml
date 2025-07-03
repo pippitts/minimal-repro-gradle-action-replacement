@@ -1,0 +1,10 @@
+name: Run Gradle Wrapper Validation
+
+jobs:
+  wrapper-validation:
+    name: Integration Tests
+    runs-on: self-hosted
+    steps:
+      # setup build environment
+      - name: Gradle wrapper validation
+        uses: gradle/wrapper-validation-action@3
