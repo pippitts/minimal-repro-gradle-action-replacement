@@ -7,6 +7,13 @@
       "additionalBranchPrefix": "{{depNameSanitized}}-{{updateType}}",
       "groupName": "github-actions",
       "matchManagers": [ "github-actions" ]
+    },
+    {
+      "matchCurrentVersion": "/^3/",
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["gradle/wrapper-validation-action"],
+      "replacementName": "gradle/actions/wrapper-validation",
+      "replacementVersion": "3.5.0"
     }
   ]
 }
